@@ -1,0 +1,66 @@
+.perfectStyle{
+    width: 100%;
+    min-height: 1030px;
+    background-color: #f0f0f2;
+    padding-top: 80px;
+    &_container{
+        width: 70%;
+        min-height: 1030px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_content{
+            max-width: 750px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            h1{
+                font-size: 96px;
+                color: #0b1c39;
+            }
+            p{
+                font-size: 17px;
+                color: #212025;
+            }
+            button{
+                width: 150px;
+                height: 50px;
+                background-color: #4a4a4b;
+                color: white;
+                cursor: pointer;
+                transition: 300ms;
+                border: none;
+                font-size: 17px;
+                &:hover{
+                    background-color: red;
+
+                }
+            }
+
+        }
+        
+        
+    }   
+    @media only screen and (max-width: 600px) {
+        &_container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        &_content{
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        &_img{
+            img{
+                width: 200px;
+            }
+        }
+       }
+    }
+}

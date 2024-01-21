@@ -1,0 +1,92 @@
+.footer {
+  width: 100%;
+  min-height: 650px;
+  &_container {
+    width: 70%;
+    min-height: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_logo {
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        img {
+          width: 132px;
+        }
+        p {
+          color: #868c98;
+        }
+      }
+      &_link {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 150px;
+        h4 {
+          font-size: 20px;
+        }
+        &_list {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          color: #868c98;
+          li {
+            cursor: pointer;
+            transition: 200ms;
+            &:hover {
+              color: red;
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      &_top {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    &_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_content{
+            color: #888888;
+            i{
+                color: red;
+            }
+            span{
+                color: red;
+                cursor: pointer;
+            }
+        }
+        &_icon{
+            display: flex;
+            gap: 20px;
+            i{
+
+                cursor: pointer;
+                transition: 250ms;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        &_bottom {
+          flex-direction: column;
+          gap: 20px;
+        }
+    }
+  }
+}

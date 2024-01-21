@@ -1,0 +1,72 @@
+.navbar{
+    width: 100%;
+    min-height: 80px;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1;
+    &_container{
+        width: 90%;
+        min-height: 80px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_logo{
+            cursor: pointer;
+        }
+            &_items{
+                &_list{
+                    display: flex;
+                    gap: 30px;
+                    color: #141517;
+                    font-weight: 500;
+                    li{
+                        cursor: pointer;
+                        transition: 250ms;
+                        &:hover{
+                            color: #ff2020;
+                        }
+                    }
+                    a{
+                        color: #141517;
+                    }
+                    .active{
+                        color: #ff2020;
+
+                    }
+                }
+            }
+            &_menu{
+                display: none;
+            }
+            &_icons{
+                display: flex;
+                gap: 30px;
+                i{
+                    cursor: pointer;
+                    transition: 250ms;
+                    font-size: 17px;
+                    &:hover{
+                        color: #ff2020;
+                    }
+                }
+                a{
+                    color: #141517;
+                    
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                &_menu{
+                    display: block;
+                }
+                &_items{
+                    display: none;
+                }
+                &_icons{
+                    gap: 10px;
+                }
+
+              }
+    }
+}
